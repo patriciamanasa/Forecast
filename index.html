@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="shortcut icon" href="images/favicon.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg p-0">
+    <div class="container-fluid">
+      <img src="images/logo@2x.png" alt="Logo">
+      <a class="navbar-brand text-white ps-3" href="#">Weather</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Live cameras</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Photos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="content" data-bg-image="images/banner.png">
+    <div class="container">
+      <form class="location" id="locationForm">
+        <input type="text" placeholder="Find your location..." id="search" class="mt-5">
+        <input type="button" value="Find" id="submit" class="submit">
+      </form>
+    </div>
+  </div>
+ <div class="weather-table">
+  <div class="row g-0 w-100" id="weather">
+    <div class="col-md-4">
+      <div class="weather-today">
+        <div class="header" id="today">
+          <div class="day">Thursday</div>
+          <div class="date">12 December</div>
+        </div>
+        <div class="weather-content" id="current">
+          <div class="location">Cairo</div>
+          <div class="degree">
+            <div class="num">18.2<sup>o</sup>C</div>
+            <div class="icon">
+              <img src="images/116.webp" alt="Weather Icon" width="90">
+            </div>
+          </div>
+          <div class="custom">Partly cloudy</div>
+          <span><img src="images/icon-umberella.png" alt="Rain" width="21" height="21">20%</span>
+          <span><img src="images/icon-wind.png" alt="Wind" width="23" height="21">18 km/h</span>
+          <span><img src="images/icon-compass.png" alt="Direction" width="21" height="21">East</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="weather">
+        <div class="header">
+          <div class="day">Friday</div>
+        </div>
+        <div class="weather-content">
+          <div class="icon"><img src="images/113 (1).png" width="48" alt="Sunny"></div>
+          <div class="degree">23.1<sup>o</sup>C</div>
+          <small>14<sup>o</sup></small>
+          <div class="custom">Sunny</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="weather" >
+        <div class="header">
+          <div class="day">Saturday</div>
+        </div>
+        <div class="weather-content">
+          <div class="icon"><img src="images/113 (1).png" width="48" alt="Sunny"></div>
+          <div class="degree">21.6<sup>o</sup>C</div>
+          <small>12.2<sup>o</sup></small>
+          <div class="custom">Sunny</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form action="#" class="subscribe-form">
+            <input type="text" placeholder="Enter your email to subscribe..." id="subscribe">
+            <input type="submit" value="Subscribe" id="subscribe-submit">
+          </form>
+        </div>
+        <div class="col-md-3 offset-md-1">
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
